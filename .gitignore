@@ -1,0 +1,16 @@
+makemigrations
+
+__pycache__/
+*.py[cod]
+
+.Python
+myvenv/
+
+db.sqlite3
+mysql
+
+my_settings.py
+.DS_Store
+
+.vscode/
+.env
