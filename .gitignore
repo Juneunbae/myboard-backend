@@ -15,4 +15,4 @@ my_settings.py
 .vscode/
 .env
 
-secrets.json
+my_DB.py

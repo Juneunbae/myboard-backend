@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+from my_DB import my_DATABASES
 from pathlib import Path
 import os
 import environ
@@ -85,16 +85,7 @@ WSGI_APPLICATION = 'myboard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-        'default' : {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_1fb473fb61eeaff',
-        'USER': 'b8157783cf0c3a',
-        'PASSWORD': '8c696e1e',
-        'HOST': 'us-cdbr-east-05.cleardb.net',
-        'PORT': '3306',
-    }
-}
+DATABASES = my_DATABASES
 
 
 # Password validation
