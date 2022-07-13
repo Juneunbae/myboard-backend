@@ -85,7 +85,16 @@ WSGI_APPLICATION = 'myboard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = my_DATABASES
+DATABASES = {
+        'default' : {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'heroku_1fb473fb61eeaff',
+        'USER': 'b8157783cf0c3a',
+        'PASSWORD': '8c696e1e',
+        'HOST': 'us-cdbr-east-05.cleardb.net',
+        'PORT': '3306',
+    }
+}
 
 
 # Password validation
