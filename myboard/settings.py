@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-
 from pathlib import Path
 import os
 import environ
@@ -25,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['secret_key']
+SECRET_KEY = os.environ.get('secret_key', 'p!yl^gp!q6d#p3@-$y1%&#6razpo8v$#%mq!&=l@x##yzpbmsg')
 # SECURITY WARNING: don't run with debug turned on isn production!
 DEBUG = False
 
