@@ -8,8 +8,6 @@ myvenv/
 
 db.sqlite3
 mysql
-
-my_settings.py
 .DS_Store
 
 .vscode/
