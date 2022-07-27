@@ -15,6 +15,9 @@ class Post(models.Model) :
     likes = models.ManyToManyField(User, related_name='like_posts', blank=True)
     published_date = models.DateTimeField(default=timezone.now)
 
+    def get_category(self, obj):
+       return [category.name for category in obj.category.all()]
+
 class Comment(models.Model) :
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
